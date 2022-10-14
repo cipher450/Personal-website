@@ -41,97 +41,21 @@ html {
 }
 
 .article {
-  box-shadow: 2px 2px 2px darkblue darkblue;
-  width: 75%;
+  width: 85%;
   margin: auto;
   padding: 15px 25px 15px 25px;
   margin-bottom: 50px;
   border-radius: 5%;
-  transition: all 300ms ease-out;
   display: grid;
   grid-template-rows: 80px 200px;
   justify-content: space-between;
+  transition: all 300ms ease-out;
   box-shadow: -1px 6px 17px 10px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -1px 6px 17px 10px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 6px 17px 10px rgba(0, 0, 0, 0.75);
 }
 
 /*#region Slideshow*/
-.slideshow-container {
-  grid-column: 3/4;
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.mySlides {
-  max-width: 500px;
-  display: none;
-  transition: transform 0.2s; /* Animation */
-}
-.mySlides:hover {
-  transform: scale(2);
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.numbertext {
-  color: rgba(248, 89, 89, 0.6588235294);
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-          animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 /*#endregion RegionName*/
 .Article_text {
   text-align: left;
@@ -146,24 +70,28 @@ html {
   margin-top: 25px;
   padding-top: 10px;
   padding: 5px;
-  background-color: #1C1C21;
+  background-color: rgba(28, 28, 33, 0.6352941176);
   grid-column: 1/2;
   grid-row: 3;
   text-align: center;
   border: #444444 solid;
-  border-radius: 5px;
   border-radius: 10px;
-  max-width: 150px;
+  max-width: 170px;
   max-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: all ease-in-out 220ms;
 }
 .Article_Buttons:hover {
   cursor: pointer;
+  border: #9d9d9d solid;
+  background-color: rgba(0, 0, 0, 0.5529411765);
   opacity: 100%;
 }
 
 .getsource {
-  margin-bottom: 50px;
+  padding: 5px;
 }
 
 .img1 {

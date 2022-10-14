@@ -12,37 +12,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet"> 
-    <title>cipher450</title>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>   
+<title>cipher450</title>
 </head>
 <body>
-    <div class="Header">
-        <div class="logo">
-            <img src="res/102109601.png" alt="" class="logo_png">
-        </div>
+   
+   <div class="profile" id="profile" onmouseover="chbg()">
+    <h1 class="profile_name" id="profile_name">
+        Mustapha Hadjal
+    </h1>
+    <img src="res/102109601.png" id="profile_img" class="profile_img">
+    <p class="profile_paragraphe">Hi and welecom to my portfolio website i'm 22 years old i'm a self taught programmer i learnd to code at 
+        age of 15 with visuel basic .NET i very much love cybersecuriy but programing is my love i like to learn all the time i know 7 programing languages from Desktop applications to web development ( and 4 speaking Langugaes lol )
+    you can find me at Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ex sint inventore cupiditate excepturi nobis, et dolor sequi architecto incidunt aliquid repellat ipsam voluptas fuga laudantium ut voluptate dignissimos accusantium!</p>
+<div class="profile_icons"> 
+   <div class="insta">
+    <img src="https://raw.githubusercontent.com/gauravghongde/social-icons/9d939e1c5b7ea4a24ac39c3e4631970c0aa1b920/SVG/Color/Instagram.svg" class="profile_icon"  id="prfl_icn1"  > 
+    <h4 class="profile_icon_h4" id="p_iconText1">@r_a_n_d_o_m_x</h4>  
+   </div>
+<div class="telegram">
+    <img src="https://cdn-icons-png.flaticon.com/512/3670/3670157.png" class="profile_icon" id="prfl_icn2">  
+    <h4 class="profile_icon_h4" id="p_iconText2">@r_a_n_d_o_m_x</h4>  
+</div>
+<div class="github">
+    <img src="https://raw.githubusercontent.com/gauravghongde/social-icons/9d939e1c5b7ea4a24ac39c3e4631970c0aa1b920/SVG/Black/Github_black.svg" class="profile_icon" id="prfl_icn3">  
+    <h4 class="profile_icon_h4" id="p_iconText3">@r_a_n_d_o_m_x</h4>  
+</div>
+<div class="linkedin">
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Flinkedin-icon-logo-png-transparent.png&f=1&nofb=1&ipt=0705fa5edc7a08e484bf73779b53cd3b6aaa877d45a43dda517c12227f12f191&ipo=images" class="profile_icon" id="prfl_icn4">  
+    <h4 class="profile_icon_h4" id="p_iconText4">@r_a_n_d_o_m_x</h4>  
+</div>
+    
+    
+   
+    <img src="" class="profile_icon">  
+ 
+</div>
 
-        <div class="titeldiv">
-         <h1 class="Titel">Cipher450</h1>
-        </div>
-        <br>
-        <div class="Navbar">
-            <ul class="Navbar_ul">
-                <li class="Navbar_item"><a href="#section2">News</a></li>
-                <li class="Navbar_item"><a href="#section1">Home</a></li>
-                <li class="Navbar_item"><a href="">Tools</a></li>
-                <li class="Navbar_item"><a href="#section3">About</a></li>
-              </ul>
-        </div>
-       <div class="description">
-           <!-- <h2 class="Subtitel">Hi i'm mustapha 23 years of age , and these are my projects through out my life</h2> -->
-      
-        </div>
-       <div class="social">
-       
-       </div>
-    </div>
+  
+   
+</div>
 
 
 <div class="Home" id="section1">
+    <h1 class="profile_name" style="padding-bottom: 30px;">Here are some of my projects</h1>
 <div class="article" style="background-image:linear-gradient(rgba(80, 5, 99, 0.656),rgba(45, 14, 197, 0.59)) " >
 
     <div class="Articel_titel">
@@ -51,30 +64,8 @@
    
   
     <br>
-    <div class="slideshow-container">
-
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="res/Articels/ACU.png" style="width:100%">
-        
-        </div>
-      
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="res/Articels/ACU0.png" style="width:100%">
- 
-        </div>
-      
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="res/Articels/ACU1.png" style="width:100%">
-         
-        </div>
-      
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="slide-container">
+     
       </div>
       
      
@@ -84,35 +75,23 @@
 
 
         This is a softwar that will let you calculat the hashsum of your files/text in multiple Hash algorithmes such as MD5/SHA 1-256-384-512/CRC32/RIPMD-160 you can save your resault in Text or HTML format 
-
-
-
-
-
-
-
-
-
-       
-       
-
          
     </div>
     <div class="Article_Buttons" onclick="openurl('https://github.com/cipher450/ACU')">
-    
       <img class="img1" src="https://pngimg.com/uploads/github/github_PNG80.png" width="35px" >
       <h4 class="getsource">Source code</h1>
     </div>
+   
     <div class="Articel_info">
         <table class="Articel_Table">
             <tr class="Articel_Table_row">
-                <th class="Articel_Table_Header" > Languages</th>
+                <th class="Articel_Table_Header" >Languages</th>
                 <th class="Articel_Table_Header" >Type</th>
                 <th class="Articel_Table_Header" >Version</th>
                 <th class="Articel_Table_Header">Date</th>
             </tr>
             <tr class="Articel_Table_row">
-                <td class="Articel_Table_data"> <img src="/res/Images/vb.png" class="img_icon">Visuel Basic .NET</td>
+                <td class="Articel_Table_data"> Visuel Basic .NET</td>
                 <td class="Articel_Table_data">Utility</td>
                 <td class="Articel_Table_data">3.1</td>
                 <td class="Articel_Table_data">2019</td>
@@ -123,18 +102,191 @@
     </div>
    
 </div>
-<div class="article" style="background-image:linear-gradient(rgba(80, 5, 99, 0.945),rgba(44, 14, 197, 0.863))">
+<div class="article" style="background-image:linear-gradient(rgba(80, 5, 99, 0.656),rgba(45, 14, 197, 0.59)) " >
+
+    <div class="Articel_titel">
+        <H2 class="artcl_h1"> TryHTML </H2> 
+    </div>
+   
+  
+    <br>
+    <div class="slide-container">
+     
+    </div>
     
-</div>
-<div class="article" style="background-image:linear-gradient(rgba(80, 5, 99, 0.945),rgba(44, 14, 197, 0.863)) ">
+      
+   
+    <div class="Article_text">
+
+
+        TryHTML is tool that can help you to Edit or Creat a HTML page in this tool You can test your code while coding in LIVE and if your a beginner 
+        it not a problem TryHTML hase built in code library you can also Convert images to Base64 or the opposite and you can get source code of a webpage
+        and you can also get eny color in RGB TryHTML hase a color Picker.
+         
+    </div>
+    <div class="Article_Buttons" onclick="openurl('https://github.com/cipher450/ACU')">
+      <img class="img1" src="https://pngimg.com/uploads/github/github_PNG80.png" width="35px" >
+      <h4 class="getsource">Source code</h1>
+    </div>
+   
+    <div class="Articel_info">
+        <table class="Articel_Table">
+            <tr class="Articel_Table_row">
+                <th class="Articel_Table_Header" > Languages</th>
+                <th class="Articel_Table_Header" >Type</th>
+                <th class="Articel_Table_Header" >Version</th>
+                <th class="Articel_Table_Header">Date</th>
+            </tr>
+            <tr class="Articel_Table_row">
+                <td class="Articel_Table_data"> Visuel Basic .NET</td>
+                <td class="Articel_Table_data">Utility</td>
+                <td class="Articel_Table_data">3.1</td>
+                <td class="Articel_Table_data">2019</td>
+            </tr>
+          
+            
+        </table>
+    </div>
    
 </div>
-<div class="article" style="background-image:linear-gradient(rgba(80, 5, 99, 0.945),rgba(44, 14, 197, 0.863)) ">
+<div class="article" style="background-image:linear-gradient(rgba(80, 5, 99, 0.656),rgba(45, 14, 197, 0.59)) " >
+
+    <div class="Articel_titel">
+        <H2 class="artcl_h1"> Advanced checksum utility </H2> 
+    </div>
+   
+  
+    <br>
+    <div class="slide-container">
+     
+    </div>
+    
+      
+   
+    <div class="Article_text">
+
+
+        This is a softwar that will let you calculat the hashsum of your files/text in multiple Hash algorithmes such as MD5/SHA 1-256-384-512/CRC32/RIPMD-160 you can save your resault in Text or HTML format 
+         
+    </div>
+    <div class="Article_Buttons" onclick="openurl('https://github.com/cipher450/ACU')">
+      <img class="img1" src="https://pngimg.com/uploads/github/github_PNG80.png" width="35px" >
+      <h4 class="getsource">Source code</h1>
+    </div>
+   
+    <div class="Articel_info">
+        <table class="Articel_Table">
+            <tr class="Articel_Table_row">
+                <th class="Articel_Table_Header" > Languages</th>
+                <th class="Articel_Table_Header" >Type</th>
+                <th class="Articel_Table_Header" >Version</th>
+                <th class="Articel_Table_Header">Date</th>
+            </tr>
+            <tr class="Articel_Table_row">
+                <td class="Articel_Table_data"> Visuel Basic .NET</td>
+                <td class="Articel_Table_data">Utility</td>
+                <td class="Articel_Table_data">3.1</td>
+                <td class="Articel_Table_data">2019</td>
+            </tr>
+          
+            
+        </table>
+    </div>
    
 </div>
-<div class="article" style="background-image:linear-gradient(rgba(80, 5, 99, 0.945),rgba(44, 14, 197, 0.863)) ">
+<div class="article" style="background-image:linear-gradient(rgba(80, 5, 99, 0.656),rgba(45, 14, 197, 0.59)) " >
+
+    <div class="Articel_titel">
+        <H2 class="artcl_h1"> Advanced checksum utility </H2> 
+    </div>
+   
+  
+    <br>
+    <div class="slide-container">
+     
+    </div>
+    
+     
+      
+   
+    <div class="Article_text">
+
+
+        This is a softwar that will let you calculat the hashsum of your files/text in multiple Hash algorithmes such as MD5/SHA 1-256-384-512/CRC32/RIPMD-160 you can save your resault in Text or HTML format 
+         
+    </div>
+    <div class="Article_Buttons" onclick="openurl('https://github.com/cipher450/ACU')">
+      <img class="img1" src="https://pngimg.com/uploads/github/github_PNG80.png" width="35px" >
+      <h4 class="getsource">Source code</h1>
+    </div>
+   
+    <div class="Articel_info">
+        <table class="Articel_Table">
+            <tr class="Articel_Table_row">
+                <th class="Articel_Table_Header" > Languages</th>
+                <th class="Articel_Table_Header" >Type</th>
+                <th class="Articel_Table_Header" >Version</th>
+                <th class="Articel_Table_Header">Date</th>
+            </tr>
+            <tr class="Articel_Table_row">
+                <td class="Articel_Table_data"> Visuel Basic .NET</td>
+                <td class="Articel_Table_data">Utility</td>
+                <td class="Articel_Table_data">3.1</td>
+                <td class="Articel_Table_data">2019</td>
+            </tr>
+          
+            
+        </table>
+    </div>
    
 </div>
+<div class="article" style="background-image:linear-gradient(rgba(80, 5, 99, 0.656),rgba(45, 14, 197, 0.59)) " >
+
+    <div class="Articel_titel">
+        <H2 class="artcl_h1"> Advanced checksum utility </H2> 
+    </div>
+   
+  
+    <br>
+    <div class="slide-container">
+     
+    </div>
+    
+     
+      
+   
+    <div class="Article_text">
+
+
+        This is a softwar that will let you calculat the hashsum of your files/text in multiple Hash algorithmes such as MD5/SHA 1-256-384-512/CRC32/RIPMD-160 you can save your resault in Text or HTML format 
+         
+    </div>
+    <div class="Article_Buttons" onclick="openurl('https://github.com/cipher450/ACU')">
+      <img class="img1" src="https://pngimg.com/uploads/github/github_PNG80.png" width="35px" >
+      <h4 class="getsource">Source code</h1>
+    </div>
+   
+    <div class="Articel_info">
+        <table class="Articel_Table">
+            <tr class="Articel_Table_row">
+                <th class="Articel_Table_Header" > Languages</th>
+                <th class="Articel_Table_Header" >Type</th>
+                <th class="Articel_Table_Header" >Version</th>
+                <th class="Articel_Table_Header">Date</th>
+            </tr>
+            <tr class="Articel_Table_row">
+                <td class="Articel_Table_data"> Visuel Basic .NET</td>
+                <td class="Articel_Table_data">Utility</td>
+                <td class="Articel_Table_data">3.1</td>
+                <td class="Articel_Table_data">2019</td>
+            </tr>
+          
+            
+        </table>
+    </div>
+   
+</div>
+
 
 
     </div>
@@ -150,5 +302,6 @@
 </body>
 <script src="res/JavaScript/Slidshow.js"></script>
 <script src="res/JavaScript/Helper.js"></script>
-
+<script src="res/JavaScript/Effects.js"></script>
+ 
 </html>

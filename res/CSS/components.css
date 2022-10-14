@@ -1,4 +1,10 @@
 /*#region Navbar styling*/
+@font-face {
+  font-family: "Hug Me Tight";
+  src: url("/res/Fonts//Hug Me Tight .ttf");
+  font-family: "Social";
+  src: url("/res/Fonts/SOCIAL FONT.ttf");
+}
 .Header {
   position: absolute;
   color: #fafad2;
@@ -100,10 +106,141 @@
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  justify-content: center;
+  align-items: center;
 }
 
 /*#endregion Navbar styling*/
 .img_icon {
   width: 40px;
   border-radius: 50%;
-}/*# sourceMappingURL=components.css.map */
+}
+
+/*#region profile*/
+.profile {
+  margin-top: 100px;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px;
+  height: 100%;
+  justify-content: space-between;
+  row-gap: 4px;
+  align-items: center;
+  left: 50%;
+  top: 5%;
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0.3529411765), rgba(0, 0, 0, 0.3529411765), rgba(110, 12, 12, 0.3450980392), rgba(110, 12, 12, 0.3450980392));
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease-in infinite;
+          animation: gradient 15s ease-in infinite;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.2px);
+  -webkit-backdrop-filter: blur(6.2px);
+  border: 1px solid rgba(255, 255, 255, 0.266);
+  transition: all ease-in 800ms;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.profile_img {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  border: rgba(108, 108, 108, 0.3882352941) solid 2px;
+  grid-row-end: 4;
+  grid-column-end: 4;
+  border-radius: 50%;
+  width: 400px;
+}
+
+.profile_name {
+  transition: all ease-in 500ms;
+  font-family: "Hug Me Tight";
+  font-size: 70px;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  text-align: center;
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-row-end: 2;
+  grid-column-end: 12;
+}
+
+.profile_paragraphe {
+  margin-left: 10px;
+  grid-row-start: 1;
+  grid-column-start: 4;
+  line-height: 1.5;
+  grid-row-end: 4;
+  grid-column-end: 12;
+}
+
+.profile_icon {
+  padding: 0px 60px 0px 60px;
+  width: 60px;
+}
+
+/*#region profile icons*/
+.profile_icons {
+  grid-column-start: 4;
+  grid-row-start: 3;
+  display: flex;
+}
+
+.insta {
+  cursor: pointer;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+}
+
+.telegram {
+  cursor: pointer;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+}
+
+.github {
+  cursor: pointer;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+}
+
+.linkedin {
+  cursor: pointer;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+}
+
+.p_iconText1 {
+  text-align: center;
+}
+
+/*#endregion profile icons*/
+/*#endregion profile*/
+/*#endregion Image slider*/
+/*#region Image slider*/
+/*#endregion Image slider*//*# sourceMappingURL=components.css.map */
