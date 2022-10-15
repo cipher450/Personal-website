@@ -167,11 +167,11 @@ padding: 20px;
 	background-size: 400% 400%;
 	animation: gradient 15s ease-in infinite;
 
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.47);
 
 backdrop-filter: blur(6.2px);
 -webkit-backdrop-filter: blur(6.2px);
-border: 1px solid rgba(255, 255, 255, 0.266);
+
 transition: all ease-in 800ms;
 
 @keyframes gradient {
