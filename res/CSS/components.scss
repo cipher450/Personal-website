@@ -1,106 +1,30 @@
-/*#region Navbar styling*/
-@font-face {
-  font-family: "Hug Me Tight";
-  src: url("/res/Fonts//Hug\ Me\ Tight\ .ttf");
-  font-family: "Social";
-  src: url("/res/Fonts/SOCIAL\ FONT.ttf");
-}
-.Header{
-  position:absolute;
-  color:  #fafad2 ;
-  
-  background: radial-gradient(circle at top, #1383fb , #191dd6);  border-radius: 10%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
-  flex: 1;
-  max-width: 1000px;
-  min-width: 450px;
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 5%;
-  transform: translate(-50%, -50%);
-  transition: top .3s ease-out;
-  
-    }
-  .Header:hover{
-    
-  color:  #f5f5f5 ;
-  
-  
-  }
-  
-  
-  .logo_png{
-    
-    padding-top: 30px;
-    
-  
-  border-radius: 100%;
-  width: 45px; 
-  
-  
-  }
-  
-  
-  .Titel{
-  font-size: 20px;
-  text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
-  }
-  
-  .titeldiv{
-  display:inline-block;
-  }
-  .logo{
-    margin: 0;
-   display:inline-block; 
-  }
-  .description{
-  
-    display:block;
-   
-  }
-  
-  
-  .Icon_social{
-    
-    margin-right: 20px;
-    top: 0%;
-    width: 50px;
-  }
-.Navbar{
-    display: inline-block;
-    }
 
-.Navbar_ul{
-    list-style-type: none;
-   
-    padding: 0;
-    display: flex;
-   
-  }
-  // img {
-  //   -webkit-filter: drop-shadow(1px 1px 0 rgb(255, 255, 255))
-  //                   drop-shadow(-1px -1px 0 rgb(255, 255, 255));
-  //   filter: drop-shadow(1px 1px 0 rgb(255, 255, 255)) 
-  //           drop-shadow(-1px -1px 0 rgb(255, 255, 255));
-  // }
-  
-  
-.Navbar_item{
-    
-    margin-left: 10px;
-    padding: 10px;
-    text-align: center;
-    transition: all 300ms ease-in;
-  &:hover{
-    border-radius: 20%;
-    background-color: rgba(180, 180, 180, 0.745);
-    color: black;
-  }
-  }
-/*#endregion Navbar styling*/
+/*#region Animations*/
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 /*#region Table styling*/
 
 .Articel_Table {
@@ -136,11 +60,7 @@
   }
   /*#endregion Navbar styling*/
 
-.img_icon{
-width: 40px;
-border-radius: 50%;
 
-}
 
 /*#region profile*/
 
@@ -163,9 +83,9 @@ padding: 20px;
   left: 50%;
   top: 5%;
 
-  background: linear-gradient(-45deg, #0000005a, #0000005a, #6e0c0c58, #6e0c0c58);
+  background: linear-gradient(-45deg, #0000005a, #0000005a, #6e0c0c58, #6e0c0c58 );
 	background-size: 400% 400%;
-	animation: gradient 15s ease-in infinite;
+	animation: gradient 10s ease-in infinite;
 
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.47);
 
@@ -174,17 +94,6 @@ backdrop-filter: blur(6.2px);
 
 transition: all ease-in 800ms;
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
 
 }
 .profile_img{
@@ -200,7 +109,7 @@ transition: all ease-in 800ms;
 }
 .profile_name{
   transition: all ease-in 500ms;
-  font-family: "Hug Me Tight";
+  
   font-size: 70px;
   word-spacing: 5px;
   letter-spacing: 2px;
@@ -221,7 +130,7 @@ transition: all ease-in 800ms;
   grid-column-start: 4 ;
 line-height: 1.5;
   grid-row-end: 4;
-  grid-column-end: 12;
+  grid-column-end: 5;
 }
 
 .profile_icon{
@@ -273,55 +182,72 @@ text-align: center;
 
 /*#endregion profile*/
 /*#endregion Image slider*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
 
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 /*#region Image slider*/
 
-// slide-container{
-//   grid-column: 3 / 4;
-//   max-width: 1000px;
-//   max-height:280px;
-//   position: relative;
-//   margin: auto;
-//   overflow: hidden;
-//   transition: all 400ms;
-//   &:hover{
-//     transform: scale(1.5);
-//     overflow:visible;
-//   }
-//  }
+.slide-container{
 
-// .image-container{
-//   max-width: 500px;
+  grid-column: 3;
+  grid-row: 1 / 2 ;
+  max-width: 1000px;
+  max-height:800px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
  
-//  overflow: hidden;
-// }
-// .slider-image{
-// float: left;
-// margin: 0px;
-// padding: 0px;
-// }
+ 
+ }
 
-// .button-container{
-//   top: -20px;
-//   position: relative;
-// }
-// .slider-button{
-//   display: inline-block;
-//   height: 10px;
-//   width: 10px;
-//   border-radius: 5px;
-//   background-color: rgb(0, 0, 0);
-// }
+.image-container{
+  cursor:pointer;
+  height:500px;
+  width: 500px;
+  overflow: hidden;
+  transition: all 0.8s;
+  &:hover{
 
-// #slider-image-1:target ~ .image-container{
-//   left: 0px;
-// }
-// #slider-image-2:target ~ .image-container{
-//   left: -800px;
-// }
-// #slider-image-3:target ~ .image-container{
-//   left: 1600px;
-// }
+    transform: scale(1.5);
+    overflow:visible;
+    margin: 0 auto;
+  }
+}
+
+// NOTE : the table is in the same collumn or row change that
+.slider-image{
+  max-height: 100%;
+ max-width: 100%;
+ object-fit: contain;
+overflow: hidden;
+margin: 0px;
+padding: 0px;
+
+}
+
+
 
 
 

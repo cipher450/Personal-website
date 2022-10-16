@@ -26,4 +26,5 @@ $('.Home').animate({opacity: 0}, 5);
 $(window).scroll(function(){
     
     $('.Home').animate({opacity: 1}, 1000);
+    
     })
