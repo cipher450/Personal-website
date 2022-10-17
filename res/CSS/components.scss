@@ -28,7 +28,7 @@
 /*#region Table styling*/
 
 .Articel_Table {
-    margin-top: 10px;
+    margin-top: 30px;
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -36,10 +36,11 @@
   }
   
  .Articel_Table_Header{
+  width: 100px;
   text-align: left;
   padding: 10px;
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.311);
+  background: rgba(19, 53, 223, 0.764);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -47,6 +48,7 @@
   }
   
   .Articel_Table_data{
+    width: 50%;
     text-align: left;
     padding: 10px;
    
@@ -208,13 +210,13 @@ text-align: center;
   visibility: visible;
 }
 /*#region Image slider*/
-
+// NOTE : the table is in the same collumn or row change that
 .slide-container{
-
+  max-width: 100%;
+  max-height:400px;
   grid-column: 3;
   grid-row: 1 / 2 ;
-  max-width: 1000px;
-  max-height:800px;
+ 
   position: relative;
   margin: 0 auto;
   overflow: hidden;
@@ -227,24 +229,24 @@ text-align: center;
   height:500px;
   width: 500px;
   overflow: hidden;
-  transition: all 0.8s;
-  &:hover{
 
-    transform: scale(1.5);
-    overflow:visible;
-    margin: 0 auto;
-  }
 }
 
-// NOTE : the table is in the same collumn or row change that
+
 .slider-image{
-  max-height: 100%;
- max-width: 100%;
- object-fit: contain;
+  max-height: 60%;
+ max-width: 140%;
+ object-fit:cover;
 overflow: hidden;
 margin: 0px;
 padding: 0px;
-
+transition: all 0.8s;
+&:hover{
+  float: left;
+  transform: scale(1.5);
+  overflow:visible;
+  margin: 0 auto;
+}
 }
 
 
