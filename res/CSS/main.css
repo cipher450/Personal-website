@@ -4,7 +4,7 @@ body {
   margin: 0;
   line-height: 5px;
   background: rgb(33, 33, 33);
-  background-image: url("/res/Images/bck-1.jpg");
+  background-image: url("res/Images/bck-1.jpg");
   -webkit-animation: gradient 1s infinite;
           animation: gradient 1s infinite;
   background-size: contain;
