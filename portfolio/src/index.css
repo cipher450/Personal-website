@@ -133,7 +133,7 @@ body {
 .Projects {
   width: 90vw;
   width: fit-content;
-  margin: 200px auto 200px auto;
+  margin: 200px auto 50px auto;
   padding: 20px;
   border-radius: 10px;
   background-color: #1f2937ce;
@@ -174,10 +174,10 @@ body {
 }
 
 .contact {
-  width: 90vw;
+  width: 100%;
   margin: 100px auto 100px auto;
   padding: 20px;
-  border-radius: 10px;
+ 
   background-color: #1f2937ce;
   color: rgb(255, 255, 255);
 }

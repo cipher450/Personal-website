@@ -34,5 +34,6 @@ export const Tailwind = {
     subHeader: "sm:text-5xl text-3xl",
     subHeader2: "text-3xl",
     subHeader3: "text-2xl",
+    paragraphe:"text-left m-5"
   },
 };

@@ -5,7 +5,7 @@ export default function Profile() {
   return (
     <div>
       <div className="hero flex">
-        <img src={require("./imgs/pdp.png")} className="rounded-full" />
+        <img src={require("./imgs/pdp.jpg")} className="rounded-full max-w-45" width={450}/>
 
         <div className="hero--inner m-auto">
           <h1 className="sm:text-4xl  mt-5 sm:text-left mb:text-centre  ">

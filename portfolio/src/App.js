@@ -22,6 +22,33 @@ function App({ toggleDarkmod }) {
     setVisible(true);
   });
 
+  let projectAmount = projects.length
+  const [projectNum,setProjectNum]=useState(0)
+ 
+  function nextProject(){
+    if(projectNum<projectAmount){
+      console.log(projectNum)
+      setProjectNum(projectNum+1)
+      console.log(projectNum)
+     
+     
+    }
+   
+  }
+ 
+ function prevProject(){
+   
+    if(projectNum<projectAmount){
+      setProjectNum(projectNum-1)
+      console.log(projectNum)
+    }
+   
+ 
+   
+   
+  }
+
+  
   return (
     <div className="App">
       <Navbar toggle={toggleDarkmod} />
@@ -75,6 +102,8 @@ function App({ toggleDarkmod }) {
         id="projects"
       >
         <h1 className={Tailwind.text.header + " mb-5"}>Projects</h1>
+
+
         <div className="projects--container p-20  ">
           <div className="image-container">
             <Carousel
@@ -86,35 +115,42 @@ function App({ toggleDarkmod }) {
               autoPlay={false}
             >
               <div>
-                <img src="https://user-images.githubusercontent.com/102109601/203129620-6e6bc160-42e2-4eb4-bbd8-3075a0a30303.PNG" />
+                <img src={projects[projectNum].img1} />
               </div>
               <div>
-                <img src="https://user-images.githubusercontent.com/102109601/203129649-6f7d2c7b-c718-4343-a302-ec2f17f7aa4c.PNG" />
-                <p className="legend">Legend 2</p>
+                <img src={projects[projectNum].img2} />
+              
               </div>
               <div>
-                <img src="assets/3.jpeg" />
-                <p className="legend">Legend 3</p>
+                <img src={projects[projectNum].img3}/>
+              
               </div>
             </Carousel>
           </div>
           <ProjectInfo
-            titel={projects[0].titel}
-            desc={projects[0].desc}
-            compatible={projects[0].compatible}
-            stack={projects[0].stack}
-            dw={projects[0].dw}
-            src={projects[0].src}
-            colors={projects[0].color}
+            titel={projects[projectNum].titel}
+            desc={projects[projectNum].desc}
+            compatible={projects[projectNum].compatible}
+            stack={projects[projectNum].stack}
+            dw={projects[projectNum].dw}
+            src={projects[projectNum].src}
+            colors={projects[projectNum].color}
           />
         </div>
+
         <div className="m-auto w-fit flex gap-5">
-          <div className={Tailwind.buttons.Nocolor}>Previous</div>
-          <div className={Tailwind.buttons.Nocolor}>Next</div>
+          <button className={Tailwind.buttons.Nocolor} onClick={prevProject} >Previous</button>
+          <button className={Tailwind.buttons.Nocolor} onClick={nextProject}>Next</button>
         </div>
+
       </section>
 
-      <section className="contact"></section>
+      <section className="contact" id="contact">
+      <h2 className={Tailwind.text.subHeader + " text-left"}>Get in touche with me</h2>
+      <p className={Tailwind.text.paragraphe}>I'm currently available to get involved in new projects, so get in touch if you'd like to work together.</p>
+      <p className={Tailwind.text.paragraphe} >Email me at <a href="mailto:hadjmus99@gmail.com">hadjmus99@gmail.com</a> and let's talk about your project!</p>
+     
+      </section>
     </div>
   );
 }
