@@ -14,7 +14,8 @@ function App({ toggleDarkmod }) {
   const log = console.log;
   const animation = anime({
     targets: ".TechStacks",
-    translatX: 800,
+    translatX: 800, 
+
     duration: 4000,
   });
   const [visible, setVisible] = useState(true);
@@ -27,9 +28,9 @@ function App({ toggleDarkmod }) {
  
   function nextProject(){
     if(projectNum<projectAmount){
-      console.log(projectNum)
-      setProjectNum(projectNum+1)
-      console.log(projectNum)
+     
+      setProjectNum((projectNum+1) % projectAmount)
+     
      
      
     }
@@ -37,14 +38,9 @@ function App({ toggleDarkmod }) {
   }
  
  function prevProject(){
-   
     if(projectNum<projectAmount){
-      setProjectNum(projectNum-1)
-      console.log(projectNum)
+      setProjectNum((projectNum-1 + projectAmount) % projectAmount)
     }
-   
- 
-   
    
   }
 
@@ -137,7 +133,11 @@ function App({ toggleDarkmod }) {
             colors={projects[projectNum].color}
           />
         </div>
-
+        {()=>({
+         
+        
+          
+        })}
         <div className="m-auto w-fit flex gap-5">
           <button className={Tailwind.buttons.Nocolor} onClick={prevProject} >Previous</button>
           <button className={Tailwind.buttons.Nocolor} onClick={nextProject}>Next</button>
@@ -146,9 +146,9 @@ function App({ toggleDarkmod }) {
       </section>
 
       <section className="contact" id="contact">
-      <h2 className={Tailwind.text.subHeader + " text-left"}>Get in touche with me</h2>
+      <h2 className={Tailwind.text.subHeader }>Contact</h2>
       <p className={Tailwind.text.paragraphe}>I'm currently available to get involved in new projects, so get in touch if you'd like to work together.</p>
-      <p className={Tailwind.text.paragraphe} >Email me at <a href="mailto:hadjmus99@gmail.com">hadjmus99@gmail.com</a> and let's talk about your project!</p>
+      <p className={Tailwind.text.paragraphe} >Email me at <a className="text-blue-600 underline" href="mailto:hadjmus99@gmail.com">hadjmus99@gmail.com</a> and let's talk about your project!</p>
      
       </section>
     </div>
