@@ -9,23 +9,18 @@ export default function ProjectInfo(props) {
         {" "}
         <b>{props.titel}</b>{" "}
       </h1>
-      <p className="mt-10 transition-all duration-150  ease-in-out"> {props.desc}</p>
+      <p className="mt-10 transition-all duration-150  ease-in-out text-left">
+        {" "}
+        {props.desc}
+      </p>
       <div className="flex flex-row mt-5 gap-2">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/VB.NET_Logo.svg/2048px-VB.NET_Logo.svg.png"
-          alt=""
-          width="60px"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/VB.NET_Logo.svg/2048px-VB.NET_Logo.svg.png"
-          alt=""
-          width="60px"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/VB.NET_Logo.svg/2048px-VB.NET_Logo.svg.png"
-          alt=""
-          width="60px"
-        />
+        {props.stack.map((mp) => (
+          <img
+            src={mp}
+            alt=""
+            width="60px"
+          />
+        ))}
       </div>
       <h3 className={Tailwind.text.subHeader3 + " text-left mt-5"}>
         Compatible with{" "}
@@ -79,7 +74,6 @@ export default function ProjectInfo(props) {
           href={props.src}
           className={Tailwind.buttons.Nocolor + " bg-gray-900  h-fit"}
         >
-        
           Source Code
         </button>
       </div>

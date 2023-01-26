@@ -48,6 +48,23 @@ body {
 
   background-blend-mode: multiply;
 }
+blockquote {
+  border-left: 10px solid rgb(86, 86, 86);
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: rgb(86, 86, 86);
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
 
 @keyframes animate {
   0% {
@@ -86,9 +103,7 @@ body {
 .hero img {
   transition: all ease-in 800ms;
 }
-.hero img:hover {
-  transform: scale(1.1);
-}
+
 .invisible {
   display: none;
 }
@@ -140,8 +155,42 @@ body {
   color: rgb(255, 255, 255);
 }
 .projects--container {
+  border-radius: 10px;
   display: flex;
   flex-direction: row;
+  transition: all 0.2s ease-in;
+  position: relative;
+}
+.projects--container0 {
+  background-color: #1f2937f2;
+  transition: all 0.3s ease-in-out;
+}
+.projects--container0:hover {
+  border-radius: 10px;
+  width: 100%;
+  background-color: #1f2937;
+}
+.project--type {
+  margin: 50px auto 50px auto;
+  display: flex;
+  width: fit-content;
+
+  padding: 10px;
+  border-radius: 10px;
+}
+.project--type h1 {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+.project--type img {
+  width: 150px;
+  height: 150px;
+}
+.projects--btnContainer {
+  position: absolute;
+  left: 89%;
+  top: 5%;
+  display: flex;
 }
 .image-container {
   align-items: center;
@@ -177,11 +226,19 @@ body {
   width: 100%;
   margin: 100px auto 100px auto;
   padding: 20px;
- 
+
   background-color: #1f2937ce;
   color: rgb(255, 255, 255);
 }
-.ProjectInfo {
+.contact--SocialMedia {
+  display: flex;
+   
+  gap: 10px;
+  filter: grayscale(100%);
+  margin: auto;
+}
+.contact--SocialMedia img:hover {
+  filter: none;
 }
 .bad {
   background-color: rgb(245, 49, 49);
