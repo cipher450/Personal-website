@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Personal-website/static/css/main.b29856ed.css",
-    "main.js": "/Personal-website/static/js/main.0638de66.js",
+    "main.css": "/Personal-website/static/css/main.7c924c32.css",
+    "main.js": "/Personal-website/static/js/main.c88f939a.js",
     "static/media/photography-1.gif": "/Personal-website/static/media/photography-1.5394a2afe3152c0f012e.gif",
     "static/media/Photography-2.gif": "/Personal-website/static/media/Photography-2.eea58a172627d5bf30ee.gif",
     "static/media/pulsar-1.gif": "/Personal-website/static/media/pulsar-1.b0bac4fc1b4d20a08ca8.gif",
@@ -21,13 +21,13 @@
     "static/media/acu-3.png": "/Personal-website/static/media/acu-3.4089e9b8cf2874932d1d.png",
     "static/media/web.png": "/Personal-website/static/media/web.8035babc39d5681992bf.png",
     "static/media/desktop.png": "/Personal-website/static/media/desktop.b515ea3515d36f33f142.png",
-    "static/media/discord.png": "/Personal-website/static/media/discord.667df059ddf407979d68.png",
+    "static/media/Github.png": "/Personal-website/static/media/Github.432d6d51d20037905767.png",
     "index.html": "/Personal-website/index.html",
-    "main.b29856ed.css.map": "/Personal-website/static/css/main.b29856ed.css.map",
-    "main.0638de66.js.map": "/Personal-website/static/js/main.0638de66.js.map"
+    "main.7c924c32.css.map": "/Personal-website/static/css/main.7c924c32.css.map",
+    "main.c88f939a.js.map": "/Personal-website/static/js/main.c88f939a.js.map"
   },
   "entrypoints": [
-    "static/css/main.b29856ed.css",
-    "static/js/main.0638de66.js"
+    "static/css/main.7c924c32.css",
+    "static/js/main.c88f939a.js"
   ]
 }
