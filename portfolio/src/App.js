@@ -244,9 +244,16 @@ function App({ toggleDarkmod }) {
           <div className="m-auto w-fit flex gap-5 "></div>
         </div>
       </section>
-
+      <h2  className={Tailwind.text.header + " mb-5"}>Contact</h2>
       <section className="contact" id="contact">
-        <h2 className={Tailwind.text.subHeader}>Contact</h2>
+
+
+        <div className="contact--SocialMedia  ">
+          <a href="https://github.com/cipher450" target="_blank"><img src={require("./res/Github.png")} width="70px"></img></a>
+         <a href="https://cipher450.github.io/Cv/"target="_blank"> < img src={require("./res/cv.png")}  width="70px"></img></a>
+         <a href="https://www.linkedin.com/in/mustapha-hadjal-20193b233/"target="_blank"><img src={require("./res/linkedin.png")}  width="70px"></img></a>
+          
+        </div>
         <p className={Tailwind.text.paragraphe}>
           I'm currently available to get involved in new projects, so get in
           touch if you'd like to work together.
@@ -261,11 +268,7 @@ function App({ toggleDarkmod }) {
           </a>{" "}
           and let's talk about your project!
         </p>
-        <div className="contact--SocialMedia ">
-          <img src={require("./res/Github.png")} width="70px"></img>
-          <img src={require("./res/discord.png")}  width="70px"></img>
-          <img src={require("./res/linkedin.png")}  width="70px"></img>
-        </div>
+        
       </section>
     </div>
   );
