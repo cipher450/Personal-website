@@ -57,7 +57,7 @@ export default function ProjectInfo(props) {
 
       <div className="flex mt-10 gap-5">
         <button
-          href={props.dw}
+         
           className={Tailwind.buttons.Download + " h-fit"}
         >
           <svg
@@ -67,15 +67,15 @@ export default function ProjectInfo(props) {
           >
             <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
           </svg>
-          Download
+          <a  href={props.dw}>Download</a>
         </button>
-
-        <button
-          href={props.src}
-          className={Tailwind.buttons.Nocolor + " bg-gray-900  h-fit"}
-        >
-          Source Code
-        </button>
+            {props.src ? <button
+        
+        className={Tailwind.buttons.Nocolor + " bg-gray-900  h-fit"}
+      >
+        <a   href={props.src}>Source Code</a>
+      </button> :''}
+       
       </div>
     </div>
   );

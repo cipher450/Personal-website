@@ -73,10 +73,130 @@ function App({ toggleDarkmod }) {
       <Navbar toggle={toggleDarkmod} />
 
       <Profile />
-      <h1 className={Tailwind.text.header + " mb-5 mt-50"} id="techstack">
+      <h1 className={Tailwind.text.header + " mb-5 mt-50  text-6xl" } id="projects">
+        Projects
+      </h1>
+
+      <section className={visible ? "Projects lg:m-10 " : "Projects m-10 invisible"}>
+        <div className="project--type flex lg:flex-row flex-col items-center">
+          <img src={require("./res/web.png")} />
+          <h1 className={Tailwind.text.subHeader + " text-center p-10  "}>
+            Web Applications
+          </h1>
+        </div>
+        <div className="projects--container0">
+          <div className="projects--container p-10  ">
+            <div className="image-container">
+              <Carousel
+                stopOnHover={true}
+                width={"100%"}
+                dynamicHeight={true}
+                showThumbs={false}
+                showStatus={false}
+                autoPlay={false}
+              >
+                <div>
+                  <img src={WebProjects[web_projectNum].img1} />
+                </div>
+                <div>
+                  <img src={WebProjects[web_projectNum].img2} />
+                </div>
+                <div>
+                  <img src={WebProjects[web_projectNum].img3} />
+                </div>
+              </Carousel>
+            </div>
+            <ProjectInfo
+              titel={WebProjects[web_projectNum].titel}
+              desc={WebProjects[web_projectNum].desc}
+              compatible={WebProjects[web_projectNum].compatible}
+              stack={WebProjects[web_projectNum].stack}
+              dw={WebProjects[web_projectNum].dw}
+              src={WebProjects[web_projectNum].src}
+              colors={WebProjects[web_projectNum].color}
+            />
+
+            <div className="projects--btnContainer lg:absolute  m-auto mt-20 lg:mt-0">
+              <button
+                className={
+                  Tailwind.buttons.Nocolor + " bg-gray-900  h-fit mr-2"
+                }
+                onClick={() => prevProject("web")}
+              >
+                Previous
+              </button>
+              <button
+                className={Tailwind.buttons.Nocolor + " bg-gray-900  h-fit"}
+                onClick={() => nextProject("web")}
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="project--type flex lg:flex-row flex-col items-center">
+          <img src={require("./res/desktop.png")} />
+          <h1 className={Tailwind.text.subHeader + " text-center p-10  "}>
+            Desktop Applications
+          </h1>
+        </div>
+        <div className="projects--container0">
+          <div className="projects--container p-10  ">
+            <div className="image-container">
+              <Carousel
+                stopOnHover={true}
+                width={"100%"}
+                dynamicHeight={true}
+                showThumbs={false}
+                showStatus={false}
+                autoPlay={false}
+              >
+                <div>
+                  <img src={DesktopProjects[projectNum].img1} />
+                </div>
+                <div>
+                  <img src={DesktopProjects[projectNum].img2} />
+                </div>
+                <div>
+                  <img src={DesktopProjects[projectNum].img3} />
+                </div>
+              </Carousel>
+            </div>
+            <ProjectInfo
+              titel={DesktopProjects[projectNum].titel}
+              desc={DesktopProjects[projectNum].desc}
+              compatible={DesktopProjects[projectNum].compatible}
+              stack={DesktopProjects[projectNum].stack}
+              dw={DesktopProjects[projectNum].dw}
+              src={DesktopProjects[projectNum].src}
+              colors={DesktopProjects[projectNum].color}
+            />
+
+            <div className="projects--btnContainer lg:absolute  m-auto mt-20 lg:mt-0">
+              <button
+                className={
+                  Tailwind.buttons.Nocolor + " bg-gray-900  h-fit mr-2"
+                }
+                onClick={() => prevProject("desk")}
+              >
+                Previous
+              </button>
+              <button
+                className={Tailwind.buttons.Nocolor + " bg-gray-900  h-fit"}
+                onClick={() => nextProject("desk")}
+              >
+                Next
+              </button>
+            </div>
+          </div>
+          <div className="m-auto w-fit flex gap-5 "></div>
+        </div>
+      </section>
+      <h1 className={Tailwind.text.header + " mb-5 mt-50 text-6xl"} id="techstack">
         Skills
       </h1>
-      <section className={visible ? "TechStacks" : "TechStacks invisible"}>
+      <section className={visible ? "TechStacks lg:m-10" : "TechStacks lg:m-10 invisible"}>
         <h1 className={Tailwind.text.header + " z-99"}>Backend</h1>{" "}
         <h1 className={Tailwind.text.header}></h1>
         <div className="timeline pt-20">
@@ -124,126 +244,7 @@ function App({ toggleDarkmod }) {
           </div>
         </div>
       </section>
-      <h1 className={Tailwind.text.header + " mb-5"} id="projects">
-        Projects
-      </h1>
-
-      <section className={visible ? "Projects " : "Projects invisible"}>
-        <div className="project--type">
-          <img src={require("./res/web.png")} />
-          <h1 className={Tailwind.text.subHeader + " text-center p-10  "}>
-            Web Applications
-          </h1>
-        </div>
-        <div className="projects--container0">
-          <div className="projects--container p-10  ">
-            <div className="image-container">
-              <Carousel
-                stopOnHover={true}
-                width={"100%"}
-                dynamicHeight={true}
-                showThumbs={false}
-                showStatus={false}
-                autoPlay={false}
-              >
-                <div>
-                  <img src={WebProjects[web_projectNum].img1} />
-                </div>
-                <div>
-                  <img src={WebProjects[web_projectNum].img2} />
-                </div>
-                <div>
-                  <img src={WebProjects[web_projectNum].img3} />
-                </div>
-              </Carousel>
-            </div>
-            <ProjectInfo
-              titel={WebProjects[web_projectNum].titel}
-              desc={WebProjects[web_projectNum].desc}
-              compatible={WebProjects[web_projectNum].compatible}
-              stack={WebProjects[web_projectNum].stack}
-              dw={WebProjects[web_projectNum].dw}
-              src={WebProjects[web_projectNum].src}
-              colors={WebProjects[web_projectNum].color}
-            />
-
-            <div className="projects--btnContainer">
-              <button
-                className={
-                  Tailwind.buttons.Nocolor + " bg-gray-900  h-fit mr-2"
-                }
-                onClick={() => prevProject("web")}
-              >
-                Previous
-              </button>
-              <button
-                className={Tailwind.buttons.Nocolor + " bg-gray-900  h-fit"}
-                onClick={() => nextProject("web")}
-              >
-                Next
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div className="project--type">
-          <img src={require("./res/desktop.png")} />
-          <h1 className={Tailwind.text.subHeader + " text-center p-10  "}>
-            Desktop Applications
-          </h1>
-        </div>
-        <div className="projects--container0">
-          <div className="projects--container p-10  ">
-            <div className="image-container">
-              <Carousel
-                stopOnHover={true}
-                width={"100%"}
-                dynamicHeight={true}
-                showThumbs={false}
-                showStatus={false}
-                autoPlay={false}
-              >
-                <div>
-                  <img src={DesktopProjects[projectNum].img1} />
-                </div>
-                <div>
-                  <img src={DesktopProjects[projectNum].img2} />
-                </div>
-                <div>
-                  <img src={DesktopProjects[projectNum].img3} />
-                </div>
-              </Carousel>
-            </div>
-            <ProjectInfo
-              titel={DesktopProjects[projectNum].titel}
-              desc={DesktopProjects[projectNum].desc}
-              compatible={DesktopProjects[projectNum].compatible}
-              stack={DesktopProjects[projectNum].stack}
-              dw={DesktopProjects[projectNum].dw}
-              src={DesktopProjects[projectNum].src}
-              colors={DesktopProjects[projectNum].color}
-            />
-
-            <div className="projects--btnContainer">
-              <button
-                className={
-                  Tailwind.buttons.Nocolor + " bg-gray-900  h-fit mr-2"
-                }
-                onClick={() => prevProject("desk")}
-              >
-                Previous
-              </button>
-              <button
-                className={Tailwind.buttons.Nocolor + " bg-gray-900  h-fit"}
-                onClick={() => nextProject("desk")}
-              >
-                Next
-              </button>
-            </div>
-          </div>
-          <div className="m-auto w-fit flex gap-5 "></div>
-        </div>
-      </section>
+    
       <h2  className={Tailwind.text.header + " mb-5"}>Contact</h2>
       <section className="contact" id="contact">
 

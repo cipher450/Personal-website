@@ -12,6 +12,7 @@ const logos=[
   require('../res/logos/sass.png'), //8
   require('../res/logos/tailwind.png'), //9
   require('../res/logos/csharp.png'), //10
+  require('../res/logos/nextjs.png'), //11
 ]
 const DesktopProjects = [
  
@@ -61,8 +62,8 @@ const DesktopProjects = [
     // First item  = windows , second = linux ,third = MacOs
     compatible: [true, false, false],
     stack: [logos[10],logos[6]],
-    dw: "https://github.com/cipher450/Mega-Virus-Maker/releases/download/v2.0/Release.zip",
-    src: "https://github.com/cipher450/Mega-Virus-Maker",
+    dw: "https://github.com/cipher450/Pulsar/archive/refs/heads/master.zip",
+    src: "https://github.com/cipher450/Pulsar",
     color: "rgb(211, 35, 19);",
     img1: require('../res/projects/pulsar-1.gif'),
     img2: require('../res/projects/pulsar-2.gif'),
@@ -71,13 +72,26 @@ const DesktopProjects = [
 ];
 const WebProjects =[
   {
+    titel: "Motion Genuis",
+    desc: "a 'Video' generatore that makes use of OpenAI API for GPT-3 model for text and Dall-E for image generation  " ,
+    // First item  = windows , second = linux ,third = MacOs
+    compatible: [true, true, true],
+    stack:  [  logos[11],logos[9]],
+    dw: "https://github.com/cipher450/Onion-Web",
+     
+    color: "rgb(211, 35, 19);",
+    img1: require('../res/projects/youtube.gif'),
+    img2: require('../res/projects/youtube2.gif'),
+ 
+  },
+  {
     titel: "Photography portfolio ",
     desc: "a portfolio website ",
     // First item  = windows , second = linux ,third = MacOs
-    compatible: [true, false, false],
+    compatible: [true, true, true],
     stack: [logos[7],logos[9] ],
-    dw: "https://github.com/cipher450/Mega-Virus-Maker/releases/download/v2.0/Release.zip",
-    src: "https://github.com/cipher450/Mega-Virus-Maker",
+    dw: "https://arezio-photography.onrender.com/",
+    src: "https://github.com/cipher450/Photography-portfolio",
     color: "rgb(211, 35, 19);",
     img1: require('../res/projects/photography-1.gif'),
     img2: require('../res/projects/Photography-2.gif'),
@@ -87,14 +101,15 @@ const WebProjects =[
     titel: "Onion-Web",
     desc: "Onion search engine",
     // First item  = windows , second = linux ,third = MacOs
-    compatible: [true, false, false],
+    compatible: [true, true, true],
     stack:  [  logos[7],logos[9],logos[1]],
-    dw: "https://github.com/cipher450/Mega-Virus-Maker/releases/download/v2.0/Release.zip",
-    src: "https://github.com/cipher450/Mega-Virus-Maker",
+    dw: "https://github.com/cipher450/Onion-Web",
+    src: "https://github.com/cipher450/Onion-Web",
     color: "rgb(211, 35, 19);",
     img1: require('../res/projects/onion-1.png'),
     img2: require('../res/projects/onion-2.png'),
     img3: require('../res/projects/onion-1.png'),
   },
+ 
 ]
 export { DesktopProjects , WebProjects };

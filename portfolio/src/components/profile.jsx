@@ -16,7 +16,7 @@ export default function Profile() {
             Hello 👋 my name is
           </h1>
           <h1 className="sm:text-6xl sm:font-black sm:text-left mb:text-centre ">
-            Mustapha hadjal
+            Mustapha
           </h1>
           <h1 className="text-left ml-2 sm:text-3xl sm:text-left mb:text-centre">
             <TypeAnimation

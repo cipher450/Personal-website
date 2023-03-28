@@ -65,7 +65,15 @@ export default function Navbar({ toggleDarkmod }) {
             Contact
           </a>
         </li>
-       
+        <li
+      >
+          <a
+            href=" "
+            class={  selected==4 ?itemClass+ " text-blue-700" : itemClass }
+          >
+            Blog
+          </a>
+        </li>
       </ul>
     </nav>
   );
