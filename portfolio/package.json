@@ -1,5 +1,5 @@
 {
-  "homepage": "https://cipher450.github.io/Personal-website",
+  
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -7,7 +7,6 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "animejs": "^3.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-responsive-carousel": "^3.2.23",

@@ -7,7 +7,6 @@ import {
   front_framworks,
 } from "./Data/Stacks";
 import { Tailwind } from "./TailwindClases";
-import anime from "animejs/lib/anime.es.js";
 import Navbar from "./components/NavBar";
 import { useState } from "react";
 import React, { Component } from "react";
@@ -18,12 +17,7 @@ import { DesktopProjects, WebProjects } from "./Data/Projects.js";
 
 function App({ toggleDarkmod }) {
   const log = console.log;
-  const animation = anime({
-    targets: ".TechStacks",
-    translatX: 800,
-
-    duration: 4000,
-  });
+ 
   const [visible, setVisible] = useState(true);
   window.addEventListener("scroll", () => {
     setVisible(true);
