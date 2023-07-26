@@ -1,0 +1,28 @@
+{
+  "name": "v2",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev --host",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^0.19.7",
+    "@astrojs/react": "^2.2.1",
+    "@astrojs/tailwind": "^4.0.0",
+    "@lottiefiles/react-lottie-player": "^3.5.3",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "astro": "^2.8.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-particles": "^2.11.0",
+    "scrollreveal": "^4.0.9",
+    "swiper": "^10.0.4",
+    "tailwindcss": "^3.3.3",
+    "tsparticles-slim": "^2.11.0"
+  }
+}

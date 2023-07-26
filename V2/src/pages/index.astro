@@ -1,0 +1,50 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Background from "../components/Background";
+
+import Skills from "./skills.astro";
+---
+
+<Layout title="Mustapha">
+  <div class="MainBanner h-screen">
+    <div class="flex flex-col gap-2 m-auto">
+      <div class="flex flex-col lg:gap-5">
+        <h1 class="lg:text-8xl text-6xl m-auto font-semiboldold text-white">
+          Hi i'm <span class="font-bold Slide1 lg:text-8xl text-7xl"
+            >Mustapha</span
+          >
+        </h1>
+        <p class="lg:w-1/2 m-auto text-left lg:mt-0 mt-14 text-lg">
+          I am a passionate programmer. I have been coding since a young age and
+          have always had a love for technology and problem-solving. I take
+          pride in creating beautiful and efficient code, and I am always eager
+          to take on new projects and challenges.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    import ScrollReveal from "scrollreveal";
+    function AnimateScroling() {
+      var slideright = {
+        distance: "100%",
+        origin: "left",
+        opacity: null,
+        duration: 1000,
+        delay: 750,
+      };
+      var slideup = {
+        delay: 750,
+        duration: 1500,
+        opacity: 0,
+        distance: "50%",
+        origin: "top",
+      };
+      ScrollReveal().reveal(".Slide1", slideup);
+      ScrollReveal().reveal(".slide2", slideup);
+    }
+    AnimateScroling();
+  </script>
+</Layout>

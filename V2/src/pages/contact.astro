@@ -1,0 +1,36 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Contact">
+  <div class="container--contact flex lg:flex-row flex-col gap-10">
+    <div class="lg:w-1/2">
+        <h2 class="text-5xl text-center mb-5">Contact me </h2>
+        <p>
+            Ready to embark on new ventures and creative collaborations. If you have an exciting project in mind, I'd love to hear from you! Let's bring your ideas to life together. Contact me today, and let's get started!
+        </p>
+        <div class="flex">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </div>
+    <form action="https://formspree.io/f/mzblzljk" method="POST">
+        <div class="mb-4">
+            <label for="email" class="block text-white text-sm font-medium mb-1">Email</label>
+            <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-md border-gray-300 focus:ring focus:ring-blue-200 focus:border-blue-500" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-6">
+            <label for="message" class="block text-white text-sm font-medium mb-1">Message</label>
+            <textarea id="message" name="message" class="w-full px-4 py-2  rounded-md border-gray-300 focus:ring focus:ring-blue-200 focus:border-blue-500" rows="4" placeholder="Enter your message" required></textarea>
+          </div>
+      <!-- your other form fields go here -->
+      <button
+        type="submit"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+</Layout>

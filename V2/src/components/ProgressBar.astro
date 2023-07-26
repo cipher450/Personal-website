@@ -1,0 +1,46 @@
+---
+
+export interface Props {
+	value: number;
+	 
+}
+const { value  } = Astro.props;
+let color;
+  if (value < 50) {
+    color = "medium";
+  } else if (value < 30) {
+    color = "bad";
+  } else {
+    color = "good";
+  }
+
+
+---
+<script
+  src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+  crossorigin="anonymous"></script>
+<script define:vars={{value}}  is:inline>
+   let progressBar = document.getElementsByClassName('innerprogressbar')
+   
+    for (let index = 0; index < progressBar.length; index++) {
+      $( progressBar[index] ).animate({
+      width: value + '%',
+   
+    }, 200 );
+   
+  }
+</script>
+
+<div>
+    <div class="w-full  bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+      <div
+        id="prog"
+        class={
+          color + " -600 h-3.5 rounded-full w-45 innerprogressbar text-1xl h-4 shadow-xl shadow-inherit "
+         
+        }
+       
+      ></div>
+    </div>
+  </div>
