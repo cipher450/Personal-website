@@ -19,6 +19,19 @@ html.sr .load-hidden {
 html.sr .load-hidden {
   visibility: hidden;
 }
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -30,9 +43,10 @@ html.sr .load-hidden {
     background-position: 0% 50%;
   }
 }
+
 .MainBanner {
   display: flex;
-  color: rgb(255, 255, 255);
+  color: white;
   padding: 20px;
   width: 100%;
 }
@@ -55,17 +69,21 @@ nav {
   flex-direction: column;
   list-style-type: none;
   cursor: default;
-  width: -moz-fit-content;
   width: fit-content;
   position: fixed;
   z-index: 999;
   text-align: center;
   left: 50%;
-  top: 7vh;
+  top: 0vh;
   transform: translate(-50%, -50%);
   transition: top 0.3s ease-out;
   border-radius: 10px;
   padding: 20px;
+}
+
+nav:hover {
+  top: 7vh;
+  opacity: 100%;
 }
 
 nav ul li {
@@ -81,8 +99,11 @@ nav ul li a {
   margin-left: 15px;
 }
 
-a.active,
-a:hover {
+.active {
+  background: #bb1818;
+}
+
+#navlinks:hover {
   background: #bb1818;
   transition: 0.5s;
 }
@@ -99,8 +120,8 @@ a:hover {
     text-transform: uppercase;
   }
 }
+
 .skilz {
-  height: -moz-fit-content;
   height: fit-content;
   margin: 20px;
   margin-top: 20vh;
@@ -125,13 +146,15 @@ a:hover {
 }
 
 @keyframes floating {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-20px);
   }
 }
+
 .CardContainer {
   background-color: rgba(31, 31, 31, 0.849);
   margin: 20px;
@@ -155,6 +178,7 @@ a:hover {
   width: 100%;
   transition: all 0.2s ease-in-out;
 }
+
 .skillCard:hover {
   background-color: #232323;
 }
@@ -173,10 +197,10 @@ a:hover {
     margin-left: 0px;
   }
 }
+
 .projects--container {
   padding: 20px;
   margin-top: 20vh;
-  height: -moz-fit-content;
   height: fit-content;
   background-color: rgba(31, 31, 31, 0.849);
   display: flex;
@@ -221,6 +245,7 @@ a:hover {
   gap: 10px;
   width: 45%;
 }
+
 .container--contact form textarea {
   min-height: 40vh;
 }
@@ -241,4 +266,56 @@ a:hover {
   .container--contact form {
     width: 100%;
   }
-}/*# sourceMappingURL=stylesheet.css.map */
+}
+
+.socialIcons {
+  cursor: pointer;
+  filter: contrast(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.socialIcons:hover {
+  filter: contrast(1.2);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  overflow: hidden;
+  border: 1px solid;
+  color: #ffffff;
+}
+
+.button a {
+  color: white;
+  background: transparent;
+}
+
+.button-text {
+  transform: translateX(15px);
+  font-size: 1em;
+  font-weight: 600;
+  transition-duration: 0.3s;
+}
+
+.iconer {
+  transform: translateY(35px);
+  transition-duration: 0.3s;
+}
+
+.button:hover .button-text {
+  transform: translateX(0px);
+}
+
+.button:hover .iconer {
+  transform: translateY(0px);
+}
+
+footer {
+  background-color: #161616;
+}

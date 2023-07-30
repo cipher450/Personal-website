@@ -28,30 +28,24 @@ const back_framworks = [
 ];
 const frontend = [
   { tech: "HTML", level: "70", img: lanImgUrl + "html5-colored.svg" },
+ 
+ 
   { tech: "CSS 3", level: "70", img: lanImgUrl + "css3-colored.svg" },
   {tech: "JavaScript",level: "70", img: lanImgUrl + "javascript-colored.svg"},
-  {tech: "JavaScript",level: "70", img: lanImgUrl + "javascript-colored.svg"},
-  {tech: "JavaScript",level: "70", img: lanImgUrl + "javascript-colored.svg"},
-  {tech: "JavaScript",level: "70", img: lanImgUrl + "javascript-colored.svg"},
+  
 ];
 
 const front_framworks = [
-  { tech: "React JS", level: "70", img: lanImgUrl + "react-colored.svg" },
-  { tech: "Vue JS", level: "70", img: lanImgUrl + "css3-colored.svg" },
-  { tech: "TailwindCSS", level: "70", img: lanImgUrl + "tailwindcss-colored.svg" },
+  { tech: "React JS", level: "75", img: lanImgUrl + "react-colored.svg" },
+  { tech: "Vue JS", level: "40", img: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/vue-js-icon.png" },
+  { tech: "Astro JS", level: "60", img: "https://cdn.cosmicjs.com/24428290-b9d3-11ed-907c-292879eb8504-astro-logomark-dark.png" },
+  { tech: "Next JS", level: "60", img: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/nextjs-icon.png" },
+  { tech: "TailwindCSS", level: "75", img: lanImgUrl + "tailwindcss-colored.svg" },
   {
     tech: "Sass",
-    level: "40",
+    level: "50",
     img: lanImgUrl + "sass-colored.svg",
-  }, {
-    tech: "Sass",
-    level: "40",
-    img: lanImgUrl + "sass-colored.svg",
-  }, {
-    tech: "Sass",
-    level: "40",
-    img: lanImgUrl + "sass-colored.svg",
-  },
+  }, 
 ];
 
 export { backStack, frontend, back_framworks ,front_framworks };

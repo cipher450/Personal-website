@@ -47,7 +47,7 @@ const DesktopProjects = [
   },
   {
     title: "Mega virus Maker",
-    desc: "Powerfull malwaer making software ranges from simple 'prank' virus to fullOn ransomware",
+    desc: `an advanced malware creation software that empowers users to design a diverse range of malicious programs, from lighthearted "prank" viruses to formidable full-on ransomware. This comprehensive tool caters to researchers, cybersecurity enthusiasts, and educational purposes, offering a controlled sandbox environment to prevent real-world harm. Users can explore various attack vectors, payloads, and evasion techniques, fostering a deeper understanding of cybersecurity threats. Responsible and ethical use is crucial; Mega Virus Maker emphasizes the importance of respecting legal boundaries and prioritizing cybersecurity defense over malicious intent`,
     // First item  = windows , second = linux ,third = MacOs
     compatible: [true, false, false],
     stack: [logos[0],logos[6]],
@@ -60,13 +60,13 @@ const DesktopProjects = [
   },
   {
     title: "Pulsar",
-    desc: "Windows Remote Administration Tool",
+    desc: `A versatile remote administration tool designed for legitimate system management and troubleshooting purposes. This feature-rich tool includes information gathering capabilities for computer, user, and network details, as well as a file explorer, remote command line, and Powershell access. It also offers a task manager, screenshot capture (not live streaming), microphone recording, keylogger, clipboard sniffer, password stealer, cryptocurrency mining (with limited success), and the ability to download and execute files. It is essential to emphasize that the ethical and responsible use of Windows Remote Admin Pro is crucial to protect against malicious activities and uphold cybersecurity standards`,
     // First item  = windows , second = linux ,third = MacOs
     compatible: [true, false, false],
     stack: [logos[10],logos[6]],
     dw: "https://github.com/cipher450/Pulsar/archive/refs/heads/master.zip",
     src: "https://github.com/cipher450/Pulsar",
-    color: "rgb(211, 35, 19);",
+    color: "#353535",
     img1: '/assets/projects/pulsar-1.gif',
     img2: '/assets/projects/pulsar-2.gif',
     img3: '/assets/projects/pulsar-3.gif',
@@ -74,12 +74,27 @@ const DesktopProjects = [
 ];
 const WebProjects =[
   {
-    title: "Motion Genuis",
-    desc: "a 'Video' generatore that makes use of OpenAI API for GPT-3 model for text and Dall-E for image generation  " ,
+    title: "Genicraft ( upcomping )",
+    desc: ` Experience the future of content creation with this powerful web application. Utilize AI-driven automation to generate various text-related content, including blog articles and more. Eff ortlessly create compelling and original pieces tailored to your specific requirements. Say goodbye to writer's block as you explore a new era of efficient content creation. Enhance productivity and streamline your writing process with ContentGen WebApp. ` ,
     // First item  = windows , second = linux ,third = MacOs
     compatible: [true, true, true],
     stack:  [  logos[11],logos[9]],
-    dw: "https://github.com/cipher450/Onion-Web",
+    
+     
+    color: "#aa2020",
+    txtColor:'white',
+    img1: '/assets/projects/genicraft.png',
+    
+ 
+  },
+  {
+    title: "Motion Genuis ",
+    desc: `video generator leveraging the powerful capabilities of OpenAI's GPT-3 model for text and Dall-E for image generation. This advanced AI-driven tool allows users to effortlessly create stunning videos by simply inputting text. GPT-3 crafts engaging scripts, while Dall-E generates corresponding lifelike visuals, synchronizing seamlessly with the narrative. Whether for storytelling, educational content, or marketing, revolutionaizing the video creation process, enabling users to bring their ideas to life with unparalleled ease and realism
+    (Api key's don't work anymore )` ,
+    // First item  = windows , second = linux ,third = MacOs
+    compatible: [true, true, true],
+    stack:  [  logos[11],logos[9]],
+    dw: "https://youtubehelper.onrender.com",
      
     color: "#aa2020",
     txtColor:'white',
@@ -103,11 +118,11 @@ const WebProjects =[
   },
   {
     title: "Onion-Web",
-    desc: "Onion search engine",
+    desc: "Onion Search Engine: Delve into the hidden depths of the dark web with our secure and anonymous onion search engine. Designed to protect your privacy, this specialized tool allows you to explore the vast network of onion sites, where traditional search engines can't reach. Uncover a plethora of content, ranging from valuable resources to communities and marketplaces. With robust encryption and anonymity features, Onion Search Engine provides a safe gateway for those seeking a discreet and uncensored browsing experience. Embrace the veil of anonymity and embark on an intriguing journey through the depths of the dark web",
     // First item  = windows , second = linux ,third = MacOs
     compatible: [true, true, true],
     stack:  [  logos[7],logos[9],logos[1]],
-    dw: "https://github.com/cipher450/Onion-Web",
+    
     src: "https://github.com/cipher450/Onion-Web",
     color: "#D3FF3E",
     txtColor:'black',
@@ -117,4 +132,23 @@ const WebProjects =[
   },
  
 ]
-export { DesktopProjects , WebProjects };
+
+const Bots =[
+  {
+    title: "Private Channel Manager",
+    desc: `This versatile bot is purpose-built to manage paid Telegram channels and streamline administrative tasks. Simplify user interactions by effortlessly adding, removing, and moderating members within your private community. The bot's seamless payment invoicing feature allows you to create and manage payment requests with ease. Elevate your Telegram private channel experience with efficient management and user-friendly controls, making it an essential tool for handling paid memberships and enhancing user engagement.` ,
+    // First item  = windows , second = linux ,third = MacOs
+    compatible: [true, true, true],
+    stack:  [  logos[11],logos[9]],
+   
+     
+    color: "#aa2020",
+    txtColor:'white',
+    img1: '/assets/projects/Telegrambot.png',
+    img2: '/assets/projects/youtube2.gif',
+ 
+  },
+  
+ 
+]
+export { DesktopProjects , WebProjects,Bots };

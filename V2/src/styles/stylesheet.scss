@@ -72,12 +72,16 @@ nav {
   z-index: 999;
   text-align: center;
   left: 50%;
-  top: 7vh;
+  top: 0vh;
 
   transform: translate(-50%, -50%);
   transition: top 0.3s ease-out;
   border-radius: 10px;
   padding: 20px;
+  &:hover{
+    top: 7vh;
+    opacity: 100%;
+  }
 }
 
 nav ul li {
@@ -91,11 +95,18 @@ nav ul li a {
   text-transform: uppercase;
   margin-left: 15px;
 }
-a.active,
-a:hover {
+
+.active{
   background: $primaryRed;
-  transition: 0.5s;
 }
+#navlinks {
+
+  &:hover{
+    background: $primaryRed;
+    transition: 0.5s;
+  }
+}
+
 
 @media (max-width: 700px) {
   nav {
@@ -252,4 +263,59 @@ a:hover {
   .container--contact form {
     width: 100%;
   }
+}
+
+.socialIcons{
+  cursor: pointer;
+  filter: contrast(1);
+transition: all 0.2s ease-in-out;
+  &:hover{
+    filter: contrast(1.2);
+  }
+}
+
+
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  overflow: hidden;
+  border: 1px solid;
+  color: #ffffff;
+  a{
+  
+      color: white;
+      background: transparent;
+  
+  }
+}
+
+
+.button-text {
+  transform: translateX(15px);
+  font-size: 1em;
+  font-weight: 600;
+  transition-duration: 0.3s;
+}
+
+.iconer {
+  transform: translateY(35px);
+  transition-duration: 0.3s;
+}
+
+.button:hover .button-text {
+  transform: translateX(0px);
+}
+
+.button:hover .iconer {
+  transform: translateY(0px);
+}
+
+footer{
+  background-color: #161616;
 }

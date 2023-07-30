@@ -9,40 +9,6 @@ import ProgressBar from "../components/ProgressBar.astro";
 import Layout from "../layouts/Layout.astro";
 import LottiePlayer from "../components/LottiePlayer"
 ---
-
-<script>
-  import {
-    backStack,
-    back_framworks,
-    front_framworks,
-    frontend,
-  } from "../Data/Stacks";
-  let progressBar = document.getElementById("progressBar");
-  let skillCards = document.getElementsByClassName("skillCard");
-
-  import ScrollReveal from "scrollreveal";
-  
-    var slideright = {
-      distance: "100%",
-      origin: "left",
-      opacity: 0,
-      duration: 1000,
-      delay: 750,
-
-    };
-     
-    
-  
-    
- 
-
-  for (let index = 0; index < skillCards.length; index++) {
-    const skillCard = skillCards[index];
-    let skill = skillCard.getAttribute("skill");
-   // ScrollReveal().reveal(".sk" + index, slideright);
-   
-  }
-</script>
  
 <Layout title="Skills">
 <section id="skills" class="skilz flex  flex-col  ">
@@ -92,9 +58,7 @@ import LottiePlayer from "../components/LottiePlayer"
               </div>
       </div>
     </div>
-    <LottiePlayer  customClass={'m-auto lg:block hidden floating'} width={'50%'} height={'50%'} animation={'/assets/frontend_animation.json'}
-    client:only
-    />
+    <img src="/assets/backend_vector.png" class='floating m-auto lg:block hidden'>
   </div>
   
   <div class="StackContainer flex justify-between items-center">
