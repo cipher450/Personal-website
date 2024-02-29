@@ -1,0 +1,112 @@
+---
+import {
+  backStack,
+  back_framworks,
+  front_framworks,
+  frontend,
+} from "../Data/Stacks";
+import ProgressBar from "../components/ProgressBar.astro";
+import Layout from "../layouts/Layout.astro";
+import LottiePlayer from "../components/LottiePlayer";
+---
+
+<Layout title="Skills">
+  <section id="skills" class="skilz flex flex-col">
+    <div class="StackContainer flex justify-between items-center">
+      <div class="lg:w-1/2 containerBg">
+        <h1 class="text-center text-6xl text-white pt-5 m-5">Backend</h1>
+        <div class="flex w-full">
+          <div class="CardContainer">
+            <div class="CardWarpper">
+              {
+                backStack.map((stack, i) => {
+                  return (
+                    <div class={"skillCard " + "sk" + i}>
+                      <img src={stack.img} alt="" width="60px" />
+                      <div class="flex flex-col w-full gap-2 text-white">
+                        <span>{stack.tech}</span>
+                        <ProgressBar value={Number(stack.level)} />
+                      </div>
+                    </div>
+                  );
+                })
+              }
+            </div>
+          </div>
+          <div class="CardContainer">
+            <div class="CardWarpper">
+              {
+                back_framworks.map((stack, i) => {
+                  return (
+                    <div class={"skillCard " + "sk" + i}>
+                      <img src={stack.img} alt="" width="60px" />
+                      <div class="flex flex-col w-full gap-2 text-white">
+                        <span>{stack.tech}</span>
+                        <ProgressBar value={Number(stack.level)} />
+                      </div>
+                    </div>
+                  );
+                })
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/assets/backend_vector.png"
+        class="floating m-auto lg:block hidden"
+      />
+    </div>
+
+    <div class="StackContainer flex justify-between items-center">
+      <LottiePlayer
+        customClass={"m-auto lg:block hidden floating"}
+        width={"50%"}
+        height={"50%"}
+        animation={"/assets/frontend_animation.json"}
+        client:only
+      />
+
+      <div class="lg:w-1/2 containerBg">
+        <h1 class="text-center text-6xl text-white pt-5 m-5">Frontend</h1>
+        <div class="flex w-full">
+          <div class="CardContainer">
+            <div class="CardWarpper">
+              {
+                frontend.map((stack, i) => {
+                  return (
+                    <div class={"skillCard " + "sk" + i}>
+                      <img src={stack.img} alt="" width="60px" />
+                      <div class="flex flex-col w-full gap-2 text-white ">
+                        <span>{stack.tech}</span>
+                        <ProgressBar value={Number(stack.level)} />
+                      </div>
+                    </div>
+                  );
+                })
+              }
+            </div>
+          </div>
+          <div class="CardContainer">
+            <div class="CardWarpper">
+              {
+                front_framworks.map((stack, i) => {
+                  return (
+                    <div class={"skillCard " + "sk" + i}>
+                      <img src={stack.img} alt="" width="60px" />
+                      <div class="flex flex-col w-full gap-2 text-white">
+                        <span>{stack.tech}</span>
+                        <ProgressBar value={Number(stack.level)} />
+                      </div>
+                    </div>
+                  );
+                })
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+</Layout>
