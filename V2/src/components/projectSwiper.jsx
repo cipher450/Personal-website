@@ -19,7 +19,7 @@ export default function projectSwiper({ data }) {
                      
                   </div>
   */
-  console.log(data);
+
   return (
     <>
       <Swiper
@@ -31,7 +31,7 @@ export default function projectSwiper({ data }) {
         {data.map((project) => (
           <SwiperSlide
             key={project.title}
-            style={{ backgroundColor: project.color, color: project.txtColor  }}
+            style={{ backgroundColor: project.color, color: project.txtColor }}
           >
             <div className="flex lg:flex-row flex-col gap-5 lg:h-fit h-full">
               <img src={project.img1} alt="" className="lg:w-1/2" width={""} />
@@ -51,7 +51,7 @@ export default function projectSwiper({ data }) {
                   )}
                   {project.src && (
                     <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">
-                      <a href={project.dw}>Source Code</a>
+                      <a href={project.src}>Source Code</a>
                     </button>
                   )}
                 </div>
