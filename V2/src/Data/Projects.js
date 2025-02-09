@@ -1,17 +1,17 @@
 let LogosPath = "/assets/logos/";
 const logos = [
-  "/logos/VB.png", // 0
-  "/logos/PY.png", //1
-  "/logos/css.png", //2
-  "/logos/express.png", //3
-  "/logos/html.png", //4
-  "/logos/js.png", //5
-  "/logos/NET.png", //6
-  "/logos/react.png", //7
-  "/logos/sass.png", //8
-  "/logos/tailwind.png", //9
-  "/logos/csharp.png", //10
-  "/logos/nextjs.png", //11
+  "/assets/logos/VB.png", //0
+  "/assets/logos/PY.png", //1
+  "/assets/logos/css.png", //2
+  "/assets/logos/express.png", //3
+  "/assets/logos/html.png", //4
+  "/assets/logos/js.png", //5
+  "/assets/logos/NET.png", //6
+  "/assets/logos/react.png", //7
+  "/assets/logos/sass.png", //8
+  "/assets/logos/tailwind.png", //9
+  "/assets/logos/csharp.png", //10
+  "/assets/logos/nextjs.png", //11
 ];
 const DesktopProjects = [
   {
@@ -25,9 +25,7 @@ const DesktopProjects = [
     src: "https://github.com/cipher450/ACU",
     color: "#182747",
     txtColor: "white",
-    img1: "/assets/projects/acu-1.png",
-    img2: "/assets/projects/acu-2.png",
-    img3: "/assets/projects/acu-3.png",
+    img1: ["/assets/projects/acu-1.png"],
   },
   {
     title: "TryHTML",
@@ -38,9 +36,7 @@ const DesktopProjects = [
     dw: "https://github.com/cipher450/ACU/releases/download/acu/Advanced-checksum-utility_1.3.1.exe",
     src: "https://github.com/cipher450/ACU",
     color: "rgb(211, 35, 19);",
-    img1: "/assets/projects/TryHTML-1.png",
-    img2: "/assets/projects/TryHTML-2.png",
-    img3: "/assets/projects/TryHTML-3.png",
+    img1: ["/assets/projects/TryHTML-2.png"],
   },
   {
     title: "Mega virus Maker",
@@ -51,9 +47,7 @@ const DesktopProjects = [
     dw: "https://github.com/cipher450/Mega-Virus-Maker/releases/download/v2.0/Release.zip",
     src: "https://github.com/cipher450/Mega-Virus-Maker",
     color: "rgb(211, 35, 19);",
-    img1: "/assets/projects/mvm-1.png",
-    img2: "/assets/projects/mvm-2.png",
-    img3: "/assets/projects/mvm-1.png",
+    img1: ["/assets/projects/mvm-1.png", "/assets/projects/mvm-2.png", "/assets/projects/mvm-1.png"],
   },
   {
     title: "Pulsar",
@@ -64,11 +58,21 @@ const DesktopProjects = [
     dw: "https://github.com/cipher450/Pulsar/archive/refs/heads/master.zip",
     src: "https://github.com/cipher450/Pulsar",
     color: "#353535",
-    img1: "/assets/projects/pulsar.png",
-
+    img1: ["/assets/projects/pulsar.png"],
   },
 ];
 const WebProjects = [
+  {
+    title: "Job Application Tracking System",
+    desc: `A comprehensive solution designed to streamline the job application process for users. Built with a robust tech stack, this application leverages NestJS for a scalable and maintainable backend, Vue.js for a dynamic and responsive frontend, and MySQL as the relational database to store application data. Prisma is utilized as the ORM to simplify database interactions and ensure efficient data management. `,
+    // First item  = windows , second = linux ,third = MacOs
+    compatible: [true, true, true],
+    stack: [logos[11], logos[9]],
+
+    color: "#aa2020",
+    txtColor: "white",
+    img1: ["/assets/projects/jobz-2.png", "/assets/projects/jobz-1.png"],
+  },
   {
     title: "Genicraft ( upcomping )",
     desc: ` Experience the future of content creation with this powerful web application. Utilize AI-driven automation to generate various text-related content, including blog articles and more. Eff ortlessly create compelling and original pieces tailored to your specific requirements. Say goodbye to writer's block as you explore a new era of efficient content creation. Enhance productivity and streamline your writing process with ContentGen WebApp. `,
@@ -91,22 +95,20 @@ const WebProjects = [
 
     color: "#aa2020",
     txtColor: "white",
-    img1: "/assets/projects/motion_genuis.png",
+    img1: ["/assets/projects/motion_genuis.png"],
   },
-  // {
-  //   title: "tagmachem portfolio ",
-  //   desc: "a website for tagmachem ",
-  //   // First item  = windows , second = linux ,third = MacOs
-  //   compatible: [true, true, true],
-  //   stack: [logos[7],logos[9] ],
-  //   dw: "https://arezio-photography.onrender.com/",
-  //   src: "https://github.com/cipher450/Photography-portfolio",
-  //   color: "#8DC043",
-  //   txtColor:'white',
-  //   img1: '/assets/projects/taghmcham.mp4',
-  //   img2: '/assets/projects/Photography-2.gif',
-  //   img3: '/assets/projects/photography-1.gif',
-  // },
+  {
+    title: "Tagmachem portfolio ",
+    desc: "a website for tagmachem ",
+    // First item  = windows , second = linux ,third = MacOs
+    compatible: [true, true, true],
+    stack: [logos[7], logos[9]],
+    dw: "https://tagmachem.onrender.com/",
+    src: "https://github.com/cipher450/TAGMACHEM",
+    color: "#00337C",
+    txtColor: 'white',
+    img1: ['/assets/projects/tagmachem.png'],
+  },
   {
     title: "Photography portfolio ",
     desc: "a portfolio website ",
@@ -117,7 +119,7 @@ const WebProjects = [
     src: "https://github.com/cipher450/Photography-portfolio",
     color: "#182747",
     txtColor: "white",
-    img1: "/assets/projects/arizio.png",
+    img1: ["/assets/projects/arizio.png"],
   },
   {
     title: "Onion-Web",
@@ -129,7 +131,7 @@ const WebProjects = [
     src: "https://github.com/cipher450/Onion-Web",
     color: "#D3FF3E",
     txtColor: "black",
-    img1: "/assets/projects/onion-1.png",
+    img1: ["/assets/projects/onion-1.png"],
   },
 ];
 
@@ -142,7 +144,7 @@ const Bots = [
     stack: [logos[11], logos[9]],
     color: "#aa2020",
     txtColor: "white",
-    img1: "/assets/projects/Telegrambot.png",
+    img1: ["/assets/projects/Telegrambot.png"],
   },
 ];
 export { DesktopProjects, WebProjects, Bots };
