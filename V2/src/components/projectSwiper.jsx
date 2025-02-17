@@ -1,35 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
-// Import Swiper React components
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, EffectFade, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-import { EffectFade } from "swiper/modules";
+import "swiper/css/autoplay";
 
-export default function projectSwiper({ data }) {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const intervalRef = useRef(null);
-
-  const startInterval = () => {
-    intervalRef.current = setInterval(() => {
-      setCurrentImageIndex(
-        (prevIndex) => (prevIndex + 1) % data[0].img1.length
-      );
-    }, 5000);
-  };
-
-  const stopInterval = () => {
-    if (intervalRef.current) {
-      clearInterval(intervalRef.current);
-    }
-  };
-
-  useEffect(() => {
-    startInterval();
-    return () => stopInterval();
-  }, []);
-
+export default function ProjectSwiper({ data }) {
   return (
     <>
       <Swiper
@@ -43,31 +20,25 @@ export default function projectSwiper({ data }) {
             style={{ backgroundColor: project.color, color: project.txtColor }}
           >
             <div className="flex lg:flex-row flex-col gap-5 h-full">
-              <img
-                id="mainImage"
-                src={project.img1[currentImageIndex]}
-                alt=""
+              {/* Inner Swiper for images */}
+              <Swiper
+                modules={[Autoplay]}
+                autoplay={{ delay: 5000, disableOnInteraction: false }}
                 className="lg:w-1/2"
-                onMouseEnter={stopInterval}
-                onMouseLeave={startInterval}
-              />{" "}
+              >
+                {project.img1.map((image, index) => (
+                  <SwiperSlide key={index}>
+                    <img
+                      src={image}
+                      alt={`Slide ${index + 1} for ${project.title}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+
               <div className="lg:w-1/2 p-5 flex flex-col justify-between">
                 <div className="flex flex-col gap-3">
-                  {/* <div className="flex flex-wrap items-center gap-3">
-                    {project.stack.map((stack, index) => (
-                      <img
-                        key={index}
-                        src={stack}
-                        alt={`Technology ${index + 1}`}
-                        className="w-6 h-6 object-contain"
-                        loading="lazy"
-                        onError={(e) => {
-                          e.target.onerror = null;
-                          e.target.src = "/placeholder-tech-icon.png";
-                        }}
-                      />
-                    ))}
-                  </div> */}
                   <span className="text-4xl text-left">{project.title}</span>
                   <p>{project.desc}</p>
                 </div>
