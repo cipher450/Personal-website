@@ -1,0 +1,2 @@
+Move from the navbar style site to a somthe scroll type thing where each section has an animation before going to the other
+track the number of visitis
