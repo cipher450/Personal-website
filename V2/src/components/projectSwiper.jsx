@@ -18,10 +18,9 @@ export default function ProjectSwiper({ data }) {
           <SwiperSlide
             key={project.title}
             style={{ backgroundColor: project.color, color: project.txtColor }}
+             className="flex lg:flex-row flex-col gap-5 h-full"
           >
-            <div className="flex lg:flex-row flex-col gap-5 h-full">
-              {/* Inner Swiper for images */}
-              <Swiper
+             <Swiper
                 modules={[Autoplay]}
                 autoplay={{ delay: 5000, disableOnInteraction: false }}
                 className="lg:w-1/2"
@@ -56,7 +55,7 @@ export default function ProjectSwiper({ data }) {
                   )}
                 </div>
               </div>
-            </div>
+
           </SwiperSlide>
         ))}
       </Swiper>

@@ -30,7 +30,7 @@ const DesktopProjects = [
   {
     title: "TryHTML",
     desc: "TryHTML is tool that can help you to Edit or Creat a HTML page in this tool You can test your code while coding in LIVE and if your a beginner it not a problem TryHTML hase built in code library you can also Convert images to Base64 or the opposite and you can get source code of a webpage and you can also get eny color in RGB TryHTML hase a color Picker.",
-   
+
     // First item  = windows , second = linux ,third = MacOs
     compatible: [true, false, false],
     stack: [logos[0], logos[6]],
@@ -72,18 +72,18 @@ const WebProjects = [
 
     color: "#aa2020",
     txtColor: "white",
-    img1: ["/assets/projects/jobz-2.png", "/assets/projects/jobz-1.png","/assets/projects/jobz-3.png"],
+    img1: ["/assets/projects/jobz-2.png", "/assets/projects/jobz-1.png", "/assets/projects/jobz-3.png"],
   },
   {
-    title: "P2P Money Transfer.",
-    desc: `A comprehensive solution designed to streamline the job application process for users. Built with a robust tech stack, this application leverages NestJS for a scalable and maintainable backend, Vue.js for a dynamic and responsive frontend, and MySQL as the relational database to store application data. Prisma is utilized as the ORM to simplify database interactions and ensure efficient data management. `,
+    title: "P2P Money Transfer. ",
+    desc: `A comprehensive solution designed to streamline the transfer of money using P2P markets, with its intuitive design, ensures a seamless and user-friendly experience for individuals and businesses alike. The platform empowers users to send`,
     // First item  = windows , second = linux ,third = MacOs
     compatible: [true, true, true],
     stack: [logos[11], logos[9]],
 
     color: "#aa2020",
     txtColor: "white",
-    img1: ["/assets/projects/sendmoney-2.png", "/assets/projects/sendmoney-1.png","/assets/projects/sendmoney-3.png"],
+    img1: ["/assets/projects/sendmoney-2.png", "/assets/projects/sendmoney-1.png", "/assets/projects/sendmoney-3.png"],
   },
   {
     title: "Genicraft ( upcomping )",
@@ -119,7 +119,7 @@ const WebProjects = [
     src: "https://github.com/cipher450/TAGMACHEM",
     color: "#00337C",
     txtColor: 'white',
-    img1: ['/assets/projects/tagmachem.png','/assets/projects/tagmachem.png'],
+    img1: ['/assets/projects/tagmachem.png', '/assets/projects/tagmachem.png'],
   },
   {
     title: "Photography portfolio ",
