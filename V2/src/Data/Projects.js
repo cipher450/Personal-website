@@ -25,7 +25,7 @@ const DesktopProjects = [
     src: "https://github.com/cipher450/ACU",
     color: "#182747",
     txtColor: "white",
-    img1: ["/assets/projects/acu-1.png"],
+    img1: ["/assets/projects/acu-1.png","/assets/projects/acu-2.png"],
   },
   {
     title: "TryHTML",
@@ -37,12 +37,12 @@ const DesktopProjects = [
     dw: "https://github.com/cipher450/ACU/releases/download/acu/Advanced-checksum-utility_1.3.1.exe",
     src: "https://github.com/cipher450/ACU",
     color: "rgb(211, 35, 19);",
-    img1: ["/assets/projects/TryHTML-1.png"],
+    img1: ["/assets/projects/TryHTML-1.png", "/assets/projects/TryHTML-2.png", "/assets/projects/TryHTML-3.png"],
   },
   {
     title: "Mega virus Maker",
     desc: `an advanced malware creation software that empowers users to design a diverse range of malicious programs, from lighthearted "prank" viruses to formidable full-on ransomware. This comprehensive tool caters to researchers, cybersecurity enthusiasts, and educational purposes, offering a controlled sandbox environment to prevent real-world harm. Users can explore various attack vectors, payloads, and evasion techniques, fostering a deeper understanding of cybersecurity threats. Responsible and ethical use is crucial; Mega Virus Maker emphasizes the importance of respecting legal boundaries and prioritizing cybersecurity defense over malicious intent`,
-    // First item  = windows , second = linux ,third = MacOs
+
     compatible: [true, false, false],
     stack: [logos[0], logos[6]],
     dw: "https://github.com/cipher450/Mega-Virus-Maker/releases/download/v2.0/Release.zip",
@@ -108,6 +108,17 @@ const WebProjects = [
     color: "#aa2020",
     txtColor: "white",
     img1: ["/assets/projects/motion_genuis.png"],
+  },
+  {
+    title: "SCP360 ",
+    desc: `SCPI360 is a project aimed at providing a comprehensive listing of French SCPI (Société Civile de Placement Immobilier) investments. It serves as a valuable resource for investors interested in exploring various SCPI options available in the French real estate market.
+    This project was made as an interview task during my hiring process at starty-media.`,
+    compatible: [true, true, true],
+    stack: [logos[11], logos[9]],
+
+    color: "#aa2020",
+    txtColor: "white",
+    img1: ["/assets/projects/SCP360.gif"],
   },
   {
     title: "Tagmachem portfolio ",

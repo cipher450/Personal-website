@@ -200,11 +200,9 @@ nav ul li a {
 
 .projects--container {
   padding: 20px;
-  padding-bottom: 40px;
-  padding-top: 40px;
   margin-top: 20vh;
   height: fit-content;
-  background-color: rgba(31, 31, 31, 0.9);
+  background-color: rgba(31, 31, 31, 0.849);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -220,12 +218,6 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  max-height: 50vh;
-  min-height: 50vh;
 }
 
 .container--contact {
