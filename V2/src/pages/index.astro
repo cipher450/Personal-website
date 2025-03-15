@@ -1,9 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Skills from "./skills.astro";
+import Projects from "./projects.astro";
+import Contact from"./contact.astro"
 ---
 
 <Layout title="Mustapha">
-
   <div class="MainBanner h-screen">
     <div class="flex flex-col gap-2 m-auto">
       <div class="flex flex-col lg:gap-5">
@@ -45,7 +47,7 @@ import Layout from "../layouts/Layout.astro";
               xmlns="http://www.w3.org/2000/svg"
               height="24"
               width="24"
-             fill="white"
+              fill="white"
               shape-rendering="geometricPrecision"
               text-rendering="geometricPrecision"
               image-rendering="optimizeQuality"
@@ -61,27 +63,23 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
   </div>
+  <Skills />
 
+  <Projects />
+  <Contact/>
   <script>
-    import ScrollReveal from "scrollreveal";
-    function AnimateScroling() {
-      var slideright = {
-        distance: "100%",
-        origin: "left",
-        opacity: null,
-        duration: 1000,
-        delay: 750,
-      };
-      var slideup = {
-        delay: 750,
-        duration: 1500,
-        opacity: 0,
-        distance: "50%",
-        origin: "top",
-      };
-      ScrollReveal().reveal(".Slide1", slideup);
-      ScrollReveal().reveal(".slide2", slideup);
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault(); // Prevent default anchor behavior
+    const targetId = this.getAttribute('href'); // Get the target section ID
+    const targetSection = document.querySelector(targetId); // Find the target section
+    if (targetSection) {
+      targetSection.scrollIntoView({
+        behavior: 'smooth', // Smooth scroll
+        block: 'start', // Align to the top of the section
+      });
     }
-    AnimateScroling();
+  });
+});
   </script>
 </Layout>

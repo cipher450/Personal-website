@@ -1,18 +1,37 @@
 ---
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1); // remove the first "/"
-
+let section = null 
 //   <li><a id="navlinks" class={currentPath === "blogs" ? "active" : ""} href="/blogs">Blogs</a></li>
 ---
- 
 
-<nav >
-     
-    <ul>
-      <li><a id="navlinks" class={currentPath === "" ? "active" : ""}  href="/">About</a></li>
-      <li><a id="navlinks" class={currentPath === "skills" ? "active" : ""} href="/skills">Skills</a></li>
-      <li><a id="navlinks" class={currentPath === "projects" ? "active" : ""} href="/projects">Projects</a></li>
-      <li><a id="navlinks" class={currentPath === "contact" ? "active" : ""} href="/contact">Contact</a></li>
-   
-    </ul>
-  </nav>
+<nav>
+  <ul>
+    <li>
+      <a id="navlinks" class={currentPath === "" ? "active" : ""} href="/"
+        >About</a>
+    </li>
+    <li>
+      <a
+        id="navlinks"
+        class={currentPath === "skills" ? "active" : ""}
+        href="#skills">Skills</a>
+    </li>
+    <li>
+      <a
+        id="navlinks"
+        class={currentPath === "projects" ? "active" : ""}
+        href="#projects">Projects</a>
+    </li>
+    <li>
+      <a
+        id="navlinks"
+        class={currentPath === "contact" ? "active" : ""}
+        href="#contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+<script>
+
+  
+</script>
