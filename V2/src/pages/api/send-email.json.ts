@@ -2,7 +2,7 @@ import nodemailer from "nodemailer";
 import type { APIRoute } from "astro";
 import dotenv from "dotenv";
 dotenv.config();
-export const post: APIRoute = async ({ request }) => {
+export const POST: APIRoute = async ({ request }) => {
   const body = await request.json();
 
   if (!body.name || !body.email || !body.message) {

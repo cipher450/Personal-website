@@ -28,17 +28,16 @@ const ContactForm = () => {
 
       const result = await response.json();
       if (result?.message) {
-        setEmailStatus({ ...emailStatus, succes: true });
+        setEmailStatus({ isDialogOpen: true, succes: true });
       } else {
-        setEmailStatus({ ...emailStatus, succes: false });
+        setEmailStatus({ isDialogOpen: true, succes: false });
       }
-      setEmailStatus({ ...emailStatus, isDialogOpen: true });
-
+ 
       if (response.ok) {
         setFormData({ email: "", message: "" }); // Reset form
       }
     } catch (error) {
-      setEmailStatus({ ...emailStatus, succes: false });
+      setEmailStatus({  isDialogOpen: true, succes: false });
     }
 
     setLoading(false);
