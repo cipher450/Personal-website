@@ -69,7 +69,7 @@ nav {
   cursor: default;
   width: fit-content;
   position: fixed;
-  z-index: 999;
+  z-index: 49;
   text-align: center;
   left: 50%;
   top: 0vh;
@@ -237,7 +237,6 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 45%;
   textarea{
     min-height: 40vh;
   }
@@ -314,4 +313,39 @@ transition: all 0.2s ease-in-out;
 
 footer{
   background-color: #161616;
+}
+/* Pop-up styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+}
+
+.popup-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.popup-close:hover {
+  color: #000;
 }

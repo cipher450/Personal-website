@@ -1,7 +1,7 @@
 {
-  "name": "v2",
+  "name": "portfolio",
   "type": "module",
-  "version": "0.0.1",
+  "version": "2.5.0",
   "scripts": {
     "dev": "astro dev --host",
     "start": "astro dev --host",
@@ -10,13 +10,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^0.19.7",
     "@astrojs/react": "^2.2.1",
-    "@astrojs/tailwind": "^4.0.0",
+    "@astrojs/tailwind": "^6.0.0",
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
-    "astro": "^2.8.4",
+    "astro": "^5.5.2",
+    "dotenv": "^16.4.7",
+    "nodemailer": "^6.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-particles": "^2.11.0",
